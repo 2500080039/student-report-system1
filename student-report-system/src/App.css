@@ -1,0 +1,554 @@
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f6fc;
+}
+
+.sidebar {
+  width: 250px;
+  background: #211b45;
+  color: white;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.brand span {
+  font-size: 28px;
+}
+
+.brand h2 {
+  font-size: 18px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 5px;
+  border-bottom: 1px solid #48416b;
+  margin-bottom: 25px;
+}
+
+.user-info small {
+  display: block;
+  color: #bcb6df;
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  background: #8065ef;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar nav button,
+.logout-btn {
+  border: none;
+  padding: 13px;
+  border-radius: 9px;
+  background: transparent;
+  color: #ddd8f5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+}
+
+.sidebar nav button:hover,
+.sidebar nav button.active {
+  background: #7259dc;
+  color: white;
+}
+
+.logout-btn {
+  margin-top: auto;
+  background: #3b315f;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  min-width: 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar h1 {
+  color: #252044;
+  font-size: 28px;
+  margin-bottom: 7px;
+}
+
+.topbar p {
+  color: #85839a;
+}
+
+.role-label {
+  background: #e9e4ff;
+  color: #674bd2;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  padding: 23px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 15px #2520440b;
+  position: relative;
+}
+
+.stat-card span {
+  color: #77748d;
+  font-size: 14px;
+}
+
+.stat-card h2 {
+  font-size: 30px;
+  margin-top: 12px;
+  color: #252044;
+}
+
+.stat-card svg {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  opacity: 0.5;
+}
+
+.purple {
+  border-left: 5px solid #8065ef;
+}
+
+.blue {
+  border-left: 5px solid #4299e1;
+}
+
+.green {
+  border-left: 5px solid #2dbd88;
+}
+
+.orange {
+  border-left: 5px solid #f3a43b;
+}
+
+.panel {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px #2520440b;
+}
+
+.panel h2 {
+  color: #292447;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #8065ef, #5d49c9);
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.primary-btn.small {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 15px;
+}
+
+.secondary-btn {
+  background: #eeeaf9;
+  color: #51418e;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f6f5fb;
+  border: 1px solid #e9e6f3;
+  padding: 10px 14px;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eeeef4;
+  font-size: 14px;
+}
+
+th {
+  color: #77748d;
+  background: #faf9fd;
+}
+
+td {
+  color: #393650;
+}
+
+.grade {
+  background: #e6f8ee;
+  color: #21875a;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  border: none;
+  background: #eeeaff;
+  color: #644fd0;
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.report-form,
+.account-form {
+  background: #faf9ff;
+  border: 1px solid #ece9f8;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.report-form h3 {
+  margin-bottom: 15px;
+  color: #342d5d;
+}
+
+.report-form label,
+.account-form label {
+  display: block;
+  margin: 13px 0 7px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #514d68;
+}
+
+.report-form input,
+.report-form select,
+.report-form textarea,
+.account-form input,
+.account-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd9eb;
+  border-radius: 8px;
+  background: white;
+  outline: none;
+}
+
+.report-form input:focus,
+.report-form select:focus,
+.report-form textarea:focus,
+.account-form input:focus,
+.account-form select:focus {
+  border-color: #8065ef;
+}
+
+.report-form textarea {
+  min-height: 85px;
+  resize: vertical;
+}
+
+.marks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.student-card {
+  padding: 20px;
+  background: #faf9ff;
+  border: 1px solid #eeeafa;
+  border-radius: 12px;
+}
+
+.student-card h3 {
+  margin-top: 12px;
+  color: #30294e;
+}
+
+.student-card p {
+  color: #85819a;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+
+.accounts-title {
+  margin-top: 30px;
+}
+
+.grading-list p {
+  padding: 12px;
+  background: #f6f4ff;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #51418e;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6b54d8, #30265f);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 15px 50px #17102e45;
+}
+
+.login-icon {
+  font-size: 42px;
+  text-align: center;
+}
+
+.login-card h1 {
+  color: #30265f;
+  text-align: center;
+  font-size: 25px;
+  margin: 15px 0 8px;
+}
+
+.login-card > p {
+  text-align: center;
+  color: #88849b;
+  margin-bottom: 25px;
+}
+
+.login-card label {
+  display: block;
+  font-weight: 600;
+  margin: 15px 0 7px;
+  color: #49445f;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd9eb;
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-card input:focus {
+  border-color: #8065ef;
+}
+
+.login-card .primary-btn {
+  width: 100%;
+  margin-top: 22px;
+}
+
+.demo-login {
+  margin-top: 20px;
+  padding: 12px;
+  background: #f4f1ff;
+  border-radius: 8px;
+  color: #51418e;
+  font-size: 13px;
+  text-align: center;
+}
+
+.error-message {
+  color: #d33;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+@media (max-width: 1000px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .student-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .brand {
+    margin-bottom: 10px;
+  }
+
+  .user-info {
+    margin-bottom: 12px;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar nav button {
+    white-space: nowrap;
+  }
+
+  .logout-btn {
+    margin-top: 12px;
+    width: fit-content;
+  }
+
+  .main-content {
+    padding: 17px;
+  }
+
+  .topbar h1 {
+    font-size: 23px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+
+  .stat-card h2 {
+    font-size: 23px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .marks-grid,
+  .student-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .login-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
