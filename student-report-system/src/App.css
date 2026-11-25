@@ -213,3 +213,16 @@ td strong { color: #444666; }td small { display: block; color: #a1a2b4; font-siz
   .section-block { margin: 70px auto; }.role-grid { grid-template-columns: 1fr; }.role-card { min-height: auto; }.role-card p { min-height: auto; }.section-heading h2 { font-size: 30px; }
   .login-card { padding: 26px 21px; }.login-decoration { display: none; }.dashboard-page { margin-top: 28px; padding: 0 14px; }.dashboard-welcome h1 { font-size: 27px; }.dashboard-stats { grid-template-columns: 1fr; gap: 10px; }.metric-card { padding: 16px 18px; }.panel-card { padding: 18px 14px; }.input-grid { grid-template-columns: 1fr; }.field-wide { grid-column: auto; }.marks-grid { grid-template-columns: repeat(2,1fr); }.dashboard-sidebar { padding: 8px; }.dashboard-sidebar > button { flex: 1; justify-content: center; padding: 11px 5px; }.dashboard-sidebar > button span { font-size: 10px; }.student-profile-card { padding: 16px; gap: 11px; }.profile-avatar { width: 46px; height: 46px; }.profile-main h2 { font-size: 15px; }.profile-grade strong { font-size: 22px; }.result-row { grid-template-columns: 34px 75px 1fr 42px; gap: 7px; }.result-symbol { width: 32px; height: 32px; }.result-name strong { font-size: 10px; }.list-footer { align-items: flex-start; flex-direction: column; }.table-toolbar { align-items: flex-start; flex-direction: column; }.table-toolbar input { max-width: none; }.form-actions { flex-wrap: wrap; }
 }
+
+
+/* Downloadable academic documents */
+.download-panel { margin-top: 22px; padding: 24px; border: 1px solid #e9e5ff; border-radius: 18px; background: linear-gradient(115deg, #f4f0ff 0%, #eef7ff 55%, #fff2f7 100%); box-shadow: 0 10px 30px #4f4a880a; }
+.download-copy h2 { color: #303151; font: 800 20px Manrope,sans-serif; margin: 7px 0 5px; }
+.download-copy p { color: #8588a1; font-size: 11px; margin: 0 0 17px; }
+.download-actions { display: flex; flex-wrap: wrap; gap: 11px; }
+.download-button { border: 0; border-radius: 11px; padding: 13px 17px; color: #fff; font-size: 11px; font-weight: 800; cursor: pointer; transition: transform .2s ease, box-shadow .2s ease; }
+.download-button:hover { transform: translateY(-2px); box-shadow: 0 8px 18px #4f4a8820; }
+.grade-download { background: linear-gradient(110deg, #6655df, #8870ef); }
+.certificate-download { background: linear-gradient(110deg, #df6da7, #ed8c9c); }
+.download-panel > small { display: block; color: #9698ac; font-size: 9px; line-height: 1.6; margin-top: 14px; }
+@media (max-width: 650px) { .download-panel { padding: 18px 15px; } .download-actions { flex-direction: column; } .download-button { width: 100%; } }
